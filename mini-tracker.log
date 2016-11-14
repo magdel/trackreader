@@ -1,0 +1,377 @@
+STX,Id-112233,$GPRMC,100443.000,A,,,,,0.00,0.00,231214,,,A*50,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;DD
+Thread-6: connection opened
+STX,Id-112233,$GPRMC,101036.000,A,,,,,0.00,0.00,231214,,,A*57,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;E3
+Thread-7: connection opened
+STX,Id-112233,$GPRMC,134301.000,A,,,,,0.00,0.00,231214,,,A*56,L,,imei:013226008424265,,,Battery=100%,,0,,,5330,5330;BA
+Thread-8: connection opened
+STX,Id-112233,$GPRMC,134927.000,A,,,,,0.00,0.00,231214,,,A*58,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;F3
+Thread-9: connection opened
+STX,Id-112233,$GPRMC,135052.000,A,,,,,0.00,0.00,231214,,,A*52,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;E3
+Thread-10: connection opened
+Thread-11: connection opened
+STX,Id-112233,$GPRMC,140324.000,A,,,,,0.00,0.00,231214,,,A*52,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;E1
+Thread-12: connection opened
+STX,Id-112233,$GPRMC,140536.000,A,,,,,0.00,0.00,231214,,,A*57,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;EB
+Thread-13: connection opened
+STX,Id-112233,$GPRMC,141430.000,A,,,,,0.00,0.00,231214,,,A*51,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;DF
+Thread-14: connection opened
+Thread-15: connection opened
+STX,Id-112233,$GPRMC,143012.000,A,,,,,0.00,0.00,231214,,,A*57,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;E3
+Thread-16: connection opened
+STX,Id-112233,$GPRMC,143928.000,A,,,,,0.00,0.00,231214,,,A*57,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;F3
+Thread-17: connection opened
+STX,Id-112233,$GPRMC,144146.000,A,,,,,0.00,0.00,231214,,,A*50,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;E5
+Thread-18: connection opened
+STX,Id-112233,$GPRMC,144529.000,A,,,,,0.00,0.00,231214,,,A*5D,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;FE
+Thread-19: connection opened
+STX,Id-112233,$GPRMC,144830.000,A,,,,,0.00,0.00,231214,,,A*58,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;ED
+Thread-20: connection opened
+STX,Id-112233,$GPRMC,150108.000,A,,,,,0.00,0.00,231214,,,A*5F,L,,imei:013226008424265,,,Battery=100%,,0,,,1E82,173D;F6
+Thread-21: connection opened
+Thread-22: connection opened
+STX,Id-112233,$GPRMC,152155.000,A,,,,,0.00,0.00,231214,,,A*55,L,,imei:013226008424265,,,Battery=54%,,0,,,1E82,173A;BE
+Thread-23: connection opened
+STX,Id-112233,$GPRMC,152554.000,A,,,,,0.00,0.00,231214,,,A*50,L,,imei:013226008424265,,,Battery=47%,,0,,,1E82,173A;BE
+Thread-24: connection opened
+STX,Id-112233,$GPRMC,153016.000,A,,,,,0.00,0.00,231214,,,A*52,L,,imei:013226008424265,,,Battery=49%,,0,,,1E82,173A;BC
+Thread-25: connection opened
+Thread-26: connection opened
+HB_MESSAGESTX,Id-112233,$GPRMC,001133.000,A,,,,,0.00,0.00,010109,,,A*5C,L, ,imei:013226008424265,,,Battery=100%,,0,250,02,1E82,173A;00
+Thread-26: connection closed
+Thread-27: connection opened
+LOGSTX,Id-112233,$GPRMC,164547.000,A,,,,,0.00,0.00,231214,,,A*57,L,LowBattery,imei:013226008424265,,,Battery=26%,,0,250,02,1E82,2EE9;E6
+
+LOGSTX,Id-112233,$GPRMC,164944.000,A,,,,,0.00,0.00,231214,,,A*58,L,LowBattery,imei:013226008424265,,,Battery=20%,,0,250,02,1E82,2EE9;E2
+
+LOGSTX,Id-112233,$GPRMC,165230.000,A,,,,,0.00,0.00,231214,,,A*51,L,LowBattery,imei:013226008424265,,,Battery=22%,,0,250,02,1E82,2EE9;D2
+
+LOGSTX,Id-112233,$GPRMC,165531.000,A,,,,,0.00,0.00,231214,,,A*57,L,LowBattery,imei:013226008424265,,,Battery=14%,,0,250,02,1E82,2EE9;DD
+
+LOGSTX,Id-112233,$GPRMC,000616.000,A,,,,,0.00,0.00,010109,,,A*5D,L, ,imei:013226008424265,,,Battery=100%,,0,250,02,1E82,2EE9;1F
+
+LOGSTX,Id-112233,$GPRMC,000751.000,A,,,,,0.00,0.00,010109,,,A*5F,L, ,imei:013226008424265,,,Battery=100%,,0,250,02,1E82,2EE9;21
+
+HB_MESSAGELOGSTX,Id-112233,$GPRMC,001006.000,A,,,,,0.00,0.00,010109,,,A*5B,L, ,imei:013226008424265,,,Battery=100%,,0,250,02,1E82,2EE9;17
+
+Thread-28: connection opened
+STX,Id-112233,$GPRMC,001521.000,A,,,,,0.00,0.00,010109,,,A*5B,L,,imei:013226008424265,,,Battery=100%,,0,250,02,1E82,173A;E0
+Thread-29: connection opened
+HB_MESSAGELOGSTX,Id-112233,$GPRMC,005805.000,A,,,,,0.00,0.00,010109,,,A*54,L, ,imei:013226008424265,,,Battery=100%,,0,250,02,1,12,1,12;BF
+
+Thread-29: connection closed
+Thread-30: connection opened
+HB_MESSAGE
+Thread-30: connection closed
+Thread-31: connection opened
+STX,Id-112233,$GPRMC,054519.000,A,6000.5195,N,03021.3275,E,0.00,0.00,010109,,,A*66,L,,imei:013226008424265,04,23.5,Battery=73%,,0,250,02,1E82,173D;3C
+Thread-31: connection closed
+Thread-32: connection opened
+HB_MESSAGESTX,Id-112233,$GPRMC,112314.000,A,6000.5212,N,03021.3284,E,0.00,0.00,241214,,,A*65,F, ,imei:013226008424265,04,31.2,Battery=70%,,0,250,02,1E82,173D;3B
+Thread-32: connection closed
+Thread-33: connection opened
+HB_MESSAGE
+Thread-33: connection closed
+Thread-34: connection opened
+HB_MESSAGE
+Thread-34: connection closed
+Thread-35: connection opened
+HB_MESSAGE
+Thread-35: connection closed
+Thread-36: connection opened
+STX,Id-112233,$GPRMC,112842.000,A,6000.5274,N,03021.3429,E,0.00,0.00,241214,,,A*6C,F,,imei:013226008424265,03,23.0,Battery=70%,,0,250,02,1E82,173D;36
+Thread-36: connection closed
+Thread-37: connection opened
+HB_MESSAGE
+Thread-37: connection closed
+Thread-38: connection opened
+HB_MESSAGE
+Thread-38: connection closed
+Thread-39: connection opened
+HB_MESSAGE
+Thread-39: connection closed
+Thread-40: connection opened
+HB_MESSAGE
+Thread-40: connection closed
+Thread-41: connection opened
+STX,Id-112233,$GPRMC,113342.000,A,6000.5462,N,03021.3883,E,0.00,0.00,241214,,,A*6B,F,,imei:013226008424265,03,22.9,Battery=70%,,0,250,02,1E82,173D;3C
+Thread-41: connection closed
+Thread-42: connection opened
+HB_MESSAGE
+Thread-42: connection closed
+Thread-43: connection opened
+HB_MESSAGE
+Thread-43: connection closed
+Thread-44: connection opened
+HB_MESSAGE
+Thread-44: connection closed
+Thread-45: connection opened
+HB_MESSAGE
+Thread-45: connection closed
+Thread-46: connection opened
+HB_MESSAGE
+Thread-46: connection closed
+Thread-47: connection opened
+HB_MESSAGE
+Thread-47: connection closed
+Thread-48: connection opened
+STX,Id-112233,$GPRMC,115143.000,A,6000.2470,N,03021.4648,E,46.69,147.34,241214,,,A*5C,F,,imei:013226008424265,03,23.7,Battery=68%,,0,250,02,1E82,66F1;FF
+Thread-48: connection closed
+Thread-49: connection opened
+HB_MESSAGE
+Thread-49: connection closed
+Thread-50: connection opened
+HB_MESSAGE
+Thread-50: connection closed
+Thread-51: connection opened
+HB_MESSAGE
+Thread-51: connection closed
+Thread-52: connection opened
+HB_MESSAGE
+Thread-52: connection closed
+Thread-53: connection opened
+STX,Id-112233,$GPRMC,115214.000,A,6000.2470,N,03021.4648,E,46.69,147.34,241214,,,A*5D,L,,imei:013226008424265,03,23.7,Battery=68%,,0,250,02,1E7D,4C41;0F
+Thread-53: connection closed
+Thread-54: connection opened
+HB_MESSAGE
+Thread-54: connection closed
+Thread-55: connection opened
+HB_MESSAGE
+Thread-55: connection closed
+Thread-56: connection opened
+HB_MESSAGE
+Thread-56: connection closed
+Thread-57: connection opened
+HB_MESSAGE
+Thread-57: connection closed
+Thread-58: connection opened
+STX,Id-112233,$GPRMC,120143.000,A,5958.9225,N,03020.5704,E,32.11,167.56,241214,,,A*53,F,,imei:013226008424265,04,22.0,Battery=70%,,0,250,02,1E7D,18E9;F9
+Thread-58: connection closed
+Thread-59: connection opened
+HB_MESSAGE
+Thread-59: connection closed
+Thread-60: connection opened
+HB_MESSAGE
+Thread-60: connection closed
+Thread-61: connection opened
+HB_MESSAGE
+Thread-61: connection closed
+Thread-62: connection opened
+STX,Id-112233,$GPRMC,120642.000,A,5958.1007,N,03020.1939,E,0.00,0.00,241214,,,A*69,F,,imei:013226008424265,04,13.2,Battery=70%,,0,250,02,1E83,087E;3F
+Thread-62: connection closed
+Thread-63: connection opened
+HB_MESSAGE
+Thread-63: connection closed
+Thread-64: connection opened
+HB_MESSAGE
+Thread-64: connection closed
+Thread-65: connection opened
+HB_MESSAGE
+Thread-65: connection closed
+Thread-66: connection opened
+HB_MESSAGE
+Thread-66: connection closed
+Thread-67: connection opened
+STX,Id-112233,$GPRMC,120715.000,A,5958.1007,N,03020.1939,E,0.00,0.00,241214,,,A*6A,L,,imei:013226008424265,04,13.2,Battery=70%,,0,250,02,1139,1139;25
+Thread-67: connection closed
+Thread-68: connection opened
+HB_MESSAGE
+Thread-68: connection closed
+Thread-69: connection opened
+HB_MESSAGE
+Thread-69: connection closed
+Thread-70: connection opened
+HB_MESSAGE
+Thread-70: connection closed
+Thread-71: connection opened
+HB_MESSAGE
+Thread-71: connection closed
+Thread-72: connection opened
+STX,Id-112233,$GPRMC,121219.000,A,5957.8146,N,03019.7097,E,19.06,250.49,241214,,,A*55,L,,imei:013226008424265,04,8.6,Battery=68%,,0,250,02,1E83,1C86;E5
+HB_MESSAGE
+Thread-72: connection closed
+Thread-73: connection opened
+HB_MESSAGE
+Thread-73: connection closed
+Thread-74: connection opened
+HB_MESSAGE
+Thread-74: connection closed
+Thread-75: connection opened
+Thread-76: connection opened
+Test
+Thread-76: connection closed
+Thread-77: connection opened
+STX,Id-112233,$GPRMC,185546.000,A,5957.4957,N,03019.9045,E,2.65,155.75,241214,,,A*65,L,,imei:013226008424265,04,98.4,Battery=70%,,0,250,02,1E83,355E;F4
+HB_MESSAGE
+Thread-77: connection closed
+Thread-78: connection opened
+HB_MESSAGE
+Thread-78: connection closed
+Thread-79: connection opened
+HB_MESSAGE
+Thread-79: connection closed
+Thread-80: connection opened
+HB_MESSAGE
+Thread-80: connection closed
+Thread-81: connection opened
+STX,Id-112233,$GPRMC,190440.000,A,5958.1904,N,03020.8769,E,0.00,0.00,241214,,,A*6A,F,,imei:013226008424265,05,-48.8,Battery=68%,,0,250,02,1E7D,5A79;AD
+Thread-81: connection closed
+Thread-82: connection opened
+HB_MESSAGE
+Thread-82: connection closed
+Thread-83: connection opened
+HB_MESSAGE
+Thread-83: connection closed
+Thread-84: connection opened
+HB_MESSAGE
+Thread-84: connection closed
+Thread-85: connection opened
+HB_MESSAGE
+Thread-85: connection closed
+Thread-86: connection opened
+STX,Id-112233,$GPRMC,190940.000,A,5959.3877,N,03020.7410,E,0.00,0.00,241214,,,A*63,F,,imei:013226008424265,05,55.4,Battery=68%,,0,250,02,1E7D,4C41;61
+Thread-86: connection closed
+Thread-87: connection opened
+HB_MESSAGE
+Thread-87: connection closed
+Thread-88: connection opened
+HB_MESSAGE
+Thread-88: connection closed
+Thread-89: connection opened
+HB_MESSAGE
+Thread-89: connection closed
+Thread-90: connection opened
+HB_MESSAGE
+Thread-90: connection closed
+Thread-91: connection opened
+STX,Id-112233,$GPRMC,191440.000,A,5959.9698,N,03021.8420,E,0.00,0.00,241214,,,A*67,F,,imei:013226008424265,05,84.0,Battery=66%,,0,250,02,1E82,0683;4B
+Thread-91: connection closed
+Thread-92: connection opened
+HB_MESSAGE
+Thread-92: connection closed
+Thread-93: connection opened
+HB_MESSAGE
+Thread-93: connection closed
+Thread-94: connection opened
+Thread-95: connection opened
+STX,Id-112233,$GPRMC,110647.000,A,6000.5815,N,03022.1622,E,0.00,0.00,261214,,,A*62,F,,imei:013226008424265,09,1.7,Battery=89%,,0,250,02,1E82,2FA6;16
+Thread-96: connection opened
+STX,Id-112233,$GPRMC,111147.000,A,6000.5641,N,03022.1578,E,0.00,0.00,261214,,,A*67,F,,imei:013226008424265,06,-61.6,Battery=91%,,0,250,02,1E82,2FA6;76
+Thread-97: connection opened
+STX,Id-112233,$GPRMC,111649.000,A,6000.5711,N,03022.1317,E,2.24,241.40,261214,,,A*62,F,,imei:013226008424265,10,18.5,Battery=91%,,0,250,02,1E82,2FA6;AF
+Thread-98: connection opened
+STX,Id-112233,$GPRMC,112148.000,A,6000.4225,N,03023.3528,E,32.02,113.66,261214,,,A*5A,F,,imei:013226008424265,08,29.1,Battery=89%,,0,250,02,1E82,2F27;F1
+Thread-99: connection opened
+STX,Id-112233,$GPRMC,112647.000,A,5959.7503,N,03022.8144,E,0.00,0.00,261214,,,A*60,F,,imei:013226008424265,06,23.7,Battery=89%,,0,250,02,1E82,13F4;4E
+Thread-100: connection opened
+STX,Id-112233,$GPRMC,113147.000,A,5958.7477,N,03022.9130,E,0.00,0.00,261214,,,A*67,F,,imei:013226008424265,05,-41.9,Battery=87%,,0,250,02,1E7D,007C;8F
+Thread-101: connection opened
+STX,Id-112233,$GPRMC,113648.000,A,5957.5942,N,03024.2748,E,0.00,0.00,261214,,,A*6D,F,,imei:013226008424265,06,-12.2,Battery=87%,,0,250,02,1E7C,0808;93
+Thread-102: connection opened
+STX,Id-112233,$GPRMC,221401.000,A,5957.5942,N,03024.2748,E,0.00,0.00,241214,,,A*62,L,,imei:013226008424265,06,-12.2,Battery=85%,,0,250,02,1E7C,0808;76
+Thread-103: connection opened
+STX,Id-112233,$GPRMC,140631.000,A,5958.1977,N,03023.1667,E,17.93,22.27,261214,,,A*69,F,,imei:013226008424265,07,1.0,Battery=81%,,0,250,02,1E7D,5A1E;BB
+Thread-104: connection opened
+STX,Id-112233,$GPRMC,141133.000,A,5958.7493,N,03022.9411,E,0.00,0.00,261214,,,A*6F,F,,imei:013226008424265,07,15.5,Battery=83%,,0,250,02,1E7D,007C;68
+Thread-105: connection opened
+STX,Id-112233,$GPRMC,141634.000,A,5959.1774,N,03021.9164,E,16.17,23.53,261214,,,A*60,F,,imei:013226008424265,10,10.7,Battery=83%,,0,250,02,1633,1633;9B
+Thread-106: connection opened
+STX,Id-112233,$GPRMC,142134.000,A,5959.3242,N,03022.2330,E,0.00,0.00,261214,,,A*6B,F,,imei:013226008424265,06,58.4,Battery=83%,,0,250,02,1E7D,02BB;65
+Thread-107: connection opened
+STX,Id-112233,$GPRMC,142634.000,A,5959.5367,N,03022.6306,E,0.00,0.00,261214,,,A*6D,F,,imei:013226008424265,05,67.5,Battery=83%,,0,250,02,1E82,13F5;65
+Thread-108: connection opened
+STX,Id-112233,$GPRMC,143134.000,A,5959.7860,N,03022.7638,E,0.00,0.00,261214,,,A*6C,F,,imei:013226008424265,08,9.7,Battery=83%,,0,250,02,1E82,13F4;39
+Thread-109: connection opened
+STX,Id-112233,$GPRMC,143635.000,A,6000.4673,N,03021.4400,E,0.00,0.00,261214,,,A*6A,F,,imei:013226008424265,08,-39.2,Battery=83%,,0,250,02,1E82,66F1;75
+Thread-110: connection opened
+Thread-111: connection opened
+STX,Id-112233,$GPRMC,144633.000,A,5959.8008,N,03020.7155,E,13.58,195.62,261214,,,A*5A,F,,imei:013226008424265,06,-23.2,Battery=81%,,0,250,02,1E82,1729;2B
+Thread-112: connection opened
+STX,Id-112233,$GPRMC,145135.000,A,5959.4672,N,03018.3971,E,0.00,0.00,261214,,,A*6A,F,,imei:013226008424265,07,-11.2,Battery=81%,,0,250,02,1E83,2F7D;9D
+Thread-113: connection opened
+STX,Id-112233,$GPRMC,145635.000,A,5958.7890,N,03017.9354,E,21.08,281.75,261214,,,A*57,F,,imei:013226008424265,08,-38.9,Battery=81%,,0,250,02,1E83,5A19;4B
+Thread-114: connection opened
+STX,Id-112233,$GPRMC,150135.000,A,5958.2099,N,03016.7456,E,24.54,183.24,261214,,,A*53,F,,imei:013226008424265,08,-24.5,Battery=81%,,0,250,02,1E83,1816;20
+Thread-115: connection opened
+STX,Id-112233,$GPRMC,150634.000,A,5958.1170,N,03015.2933,E,0.00,0.00,261214,,,A*63,F,,imei:013226008424265,06,5.7,Battery=81%,,0,250,02,1E83,0C05;0D
+Thread-116: connection opened
+STX,Id-112233,$GPRMC,151135.000,A,5958.1185,N,03015.2922,E,0.00,0.00,261214,,,A*6E,F,,imei:013226008424265,07,34.0,Battery=81%,,0,250,02,1E83,0C05;4C
+Thread-117: connection opened
+STX,Id-112233,$GPRMC,151635.000,A,5958.1137,N,03015.2826,E,2.15,165.52,261214,,,A*66,F,,imei:013226008424265,06,25.2,Battery=81%,,0,250,02,1E83,0C05;BE
+Thread-118: connection opened
+STX,Id-112233,$GPRMC,152135.000,A,5958.0929,N,03015.3210,E,0.00,0.00,261214,,,A*69,F,,imei:013226008424265,06,5.0,Battery=79%,,0,250,02,1E83,61AD;25
+Thread-119: connection opened
+STX,Id-112233,$GPRMC,152637.000,A,5958.1084,N,03015.3002,E,2.30,28.15,261214,,,A*5D,F,,imei:013226008424265,04,-0.4,Battery=79%,,0,250,02,1E83,61AD;9D
+Thread-120: connection opened
+STX,Id-112233,$GPRMC,153137.000,A,5958.1202,N,03015.3042,E,0.00,0.00,261214,,,A*6C,F,,imei:013226008424265,08,11.1,Battery=79%,,0,250,02,1E83,61AD;56
+Thread-121: connection opened
+STX,Id-112233,$GPRMC,153634.000,A,5958.1193,N,03015.3038,E,0.00,0.00,261214,,,A*6E,F,,imei:013226008424265,05,-28.4,Battery=79%,,0,250,02,1E83,61AD;9D
+Thread-122: connection opened
+STX,Id-112233,$GPRMC,154135.000,A,5958.1243,N,03015.3063,E,1.17,0.00,261214,,,A*68,F,,imei:013226008424265,05,-12.0,Battery=79%,,0,250,02,1E83,61AD;85
+Thread-123: connection opened
+STX,Id-112233,$GPRMC,154635.000,A,5958.1219,N,03015.2965,E,2.44,350.86,261214,,,A*63,F,,imei:013226008424265,05,9.5,Battery=77%,,0,250,02,1E83,61AD;B5
+Thread-124: connection opened
+STX,Id-112233,$GPRMC,155135.000,A,5958.0910,N,03015.2945,E,1.15,0.00,261214,,,A*6B,F,,imei:013226008424265,06,-46.0,Battery=77%,,0,250,02,1E83,61AD;9C
+Thread-125: connection opened
+STX,Id-112233,$GPRMC,155634.000,A,5958.1556,N,03015.3003,E,0.00,0.00,261214,,,A*6D,F,,imei:013226008424265,05,11.5,Battery=77%,,0,250,02,1E83,61AD;63
+Thread-126: connection opened
+STX,Id-112233,$GPRMC,160134.000,A,5958.1234,N,03015.3018,E,0.00,0.00,261214,,,A*65,F,,imei:013226008424265,06,-27.5,Battery=77%,,0,250,02,1E83,61AD;7F
+Thread-127: connection opened
+STX,Id-112233,$GPRMC,160635.000,A,5958.1124,N,03015.2839,E,0.00,0.00,261214,,,A*6B,F,,imei:013226008424265,05,81.1,Battery=77%,,0,250,02,1E83,61AD;68
+Thread-128: connection opened
+STX,Id-112233,$GPRMC,161135.000,A,5958.1232,N,03015.3048,E,0.00,0.00,261214,,,A*66,F,,imei:013226008424265,05,36.1,Battery=75%,,0,250,02,1134,1134;14
+Thread-129: connection opened
+STX,Id-112233,$GPRMC,161635.000,A,5958.1233,N,03015.3031,E,0.00,0.00,261214,,,A*6E,F,,imei:013226008424265,05,10.6,Battery=75%,,0,250,02,1E83,61AD;59
+Thread-130: connection opened
+STX,Id-112233,$GPRMC,162136.000,A,5958.1179,N,03015.2894,E,1.00,0.00,261214,,,A*63,F,,imei:013226008424265,06,34.5,Battery=75%,,0,250,02,1E83,61AD;64
+Thread-131: connection opened
+STX,Id-112233,$GPRMC,162638.000,A,5958.1185,N,03015.2996,E,0.00,0.00,261214,,,A*6B,F,,imei:013226008424265,06,-4.5,Battery=75%,,0,250,02,1E83,61AD;73
+Thread-132: connection opened
+STX,Id-112233,$GPRMC,163137.000,A,5958.1130,N,03015.3080,E,4.24,157.77,261214,,,A*62,F,,imei:013226008424265,03,9.3,Battery=75%,,0,250,02,1E83,61AD;9D
+Thread-133: connection opened
+STX,Id-112233,$GPRMC,163638.000,A,5958.1130,N,03015.3064,E,0.00,138.37,261214,,,A*6F,F,,imei:013226008424265,03,9.3,Battery=75%,,0,250,02,1E83,61AD;AA
+Thread-134: connection opened
+STX,Id-112233,$GPRMC,005322.000,A,5958.1130,N,03015.3064,E,0.00,138.37,251214,,,A*63,L,,imei:013226008424265,03,9.3,Battery=75%,,0,250,02,1E83,61AD;8D
+Thread-135: connection opened
+STX,Id-112233,$GPRMC,164634.000,A,5958.1155,N,03015.3023,E,0.00,0.00,261214,,,A*6A,F,,imei:013226008424265,07,19.4,Battery=73%,,0,250,02,1E83,61AD;62
+Thread-136: connection opened
+STX,Id-112233,$GPRMC,165134.000,A,5958.1175,N,03015.2973,E,0.00,0.00,261214,,,A*63,F,,imei:013226008424265,05,-14.6,Battery=73%,,0,250,02,1E83,61AD;87
+Thread-137: connection opened
+STX,Id-112233,$GPRMC,165634.000,A,5958.1238,N,03015.2995,E,0.00,0.00,261214,,,A*66,F,,imei:013226008424265,07,29.8,Battery=73%,,0,250,02,1E83,61AD;70
+Thread-138: connection opened
+STX,Id-112233,$GPRMC,170134.000,A,5958.1202,N,03015.2848,E,0.00,0.00,261214,,,A*6D,F,,imei:013226008424265,05,14.6,Battery=73%,,0,250,02,1E83,61AD;5F
+Thread-139: connection opened
+STX,Id-112233,$GPRMC,170635.000,A,5958.1315,N,03015.2681,E,4.00,17.99,261214,,,A*55,F,,imei:013226008424265,06,44.6,Battery=73%,,0,250,02,1E83,61AD;A7
+Thread-140: connection opened
+STX,Id-112233,$GPRMC,171134.000,A,5958.1060,N,03015.3050,E,0.00,0.00,261214,,,A*6A,F,,imei:013226008424265,07,36.2,Battery=73%,,0,250,02,1E83,61AD;53
+Thread-141: connection opened
+STX,Id-112233,$GPRMC,171635.000,A,5958.1010,N,03015.3042,E,2.85,58.55,261214,,,A*5A,F,,imei:013226008424265,08,-4.3,Battery=73%,,0,250,02,1E83,61AD;A4
+Thread-142: connection opened
+STX,Id-112233,$GPRMC,172134.000,A,5958.1152,N,03015.2915,E,0.00,0.00,261214,,,A*60,F,,imei:013226008424265,06,27.7,Battery=73%,,0,250,02,1E83,61AD;52
+Thread-143: connection opened
+STX,Id-112233,$GPRMC,172634.000,A,5958.1142,N,03015.3032,E,0.00,0.00,261214,,,A*6B,F,,imei:013226008424265,06,24.2,Battery=70%,,0,250,02,1E83,61AD;54
+Thread-144: connection opened
+STX,Id-112233,$GPRMC,173140.000,A,5958.1248,N,03015.2981,E,0.00,0.00,261214,,,A*67,F,,imei:013226008424265,08,29.7,Battery=70%,,0,250,02,1E83,61AD;61
+Thread-145: connection opened
+STX,Id-112233,$GPRMC,173634.000,A,5958.1142,N,03015.2972,E,0.00,0.00,261214,,,A*66,F,,imei:013226008424265,08,-5.4,Battery=68%,,0,250,02,1E83,61AD;5C
+Thread-146: connection opened
+STX,Id-112233,$GPRMC,174135.000,A,5958.1126,N,03015.3229,E,0.00,0.00,261214,,,A*61,F,,imei:013226008424265,07,-55.0,Battery=70%,,0,250,02,1E83,61AD;7B
+Thread-147: connection opened
+STX,Id-112233,$GPRMC,174635.000,A,5958.1259,N,03015.2968,E,0.00,0.00,261214,,,A*62,F,,imei:013226008424265,07,54.3,Battery=70%,,0,250,02,1E83,61AD;66
+Thread-148: connection opened
+STX,Id-112233,$GPRMC,175135.000,A,5958.1299,N,03015.3184,E,0.00,0.00,261214,,,A*63,F,,imei:013226008424265,07,37.1,Battery=70%,,0,250,02,1E83,61AD;5D
+Thread-149: connection opened
+STX,Id-112233,$GPRMC,175635.000,A,5958.1165,N,03015.3194,E,0.00,0.00,261214,,,A*65,F,,imei:013226008424265,06,39.4,Battery=70%,,0,250,02,1E83,61AD;61
+Thread-150: connection opened
+STX,Id-112233,$GPRMC,180134.000,A,5958.1008,N,03015.2926,E,0.00,0.00,261214,,,A*63,F,,imei:013226008424265,05,-37.1,Battery=70%,,0,250,02,1E83,61AD;7A
+Thread-151: connection opened
+STX,Id-112233,$GPRMC,180634.000,A,5958.1167,N,03015.2914,E,0.00,0.00,261214,,,A*6D,F,,imei:013226008424265,07,-26.5,Battery=70%,,0,250,02,1E83,61AD;97
+Thread-152: connection opened
+STX,Id-112233,$GPRMC,181135.000,A,5958.1134,N,03015.2633,E,0.00,0.00,261214,,,A*66,F,,imei:013226008424265,06,34.3,Battery=68%,,0,250,02,1E83,61AD;54
+Thread-153: connection opened
+STX,Id-112233,$GPRMC,181634.000,A,5958.1637,N,03015.9440,E,0.00,0.00,261214,,,A*69,F,,imei:013226008424265,06,39.9,Battery=68%,,0,250,02,1E83,239B;65
+Thread-154: connection opened
+STX,Id-112233,$GPRMC,182135.000,A,5958.5890,N,03018.0821,E,25.87,61.69,261214,,,A*64,F,,imei:013226008424265,10,28.7,Battery=68%,,0,250,02,1E83,5896;DE
+Thread-155: connection opened
+STX,Id-112233,$GPRMC,182634.000,A,5959.6834,N,03019.0517,E,0.00,0.00,261214,,,A*67,F,,imei:013226008424265,08,-2.9,Battery=70%,,0,250,02,1E83,2F7D;6A
+Thread-156: connection opened
+STX,Id-112233,$GPRMC,183135.000,A,6000.2947,N,03021.0425,E,36.56,18.02,261214,,,A*61,F,,imei:013226008424265,07,69.2,Battery=70%,,0,250,02,1E82,2F14;B3
