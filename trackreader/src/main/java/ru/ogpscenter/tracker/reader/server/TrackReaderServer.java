@@ -33,12 +33,10 @@ public class TrackReaderServer {
     }
 
     public void init() {
-        bossGroup = new NioEventLoopGroup();
-        workerGroup = new NioEventLoopGroup();
+        bossGroup = new NioEventLoopGroup(1);
+        workerGroup = new NioEventLoopGroup(1);
         try {
             ServerBootstrap serverBootstrap = new ServerBootstrap();
-
-
 
             serverBootstrap.group(bossGroup, workerGroup)
                     .channel(NioServerSocketChannel.class)

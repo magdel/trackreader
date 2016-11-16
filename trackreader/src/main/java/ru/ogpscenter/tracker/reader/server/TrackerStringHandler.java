@@ -1,5 +1,6 @@
 package ru.ogpscenter.tracker.reader.server;
 
+import io.netty.channel.ChannelHandler;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import org.slf4j.Logger;
@@ -11,6 +12,8 @@ import java.util.function.Consumer;
 /**
  * Created by rfk on 15.11.2016.
  */
+
+@ChannelHandler.Sharable
 public class TrackerStringHandler extends ChannelHandlerAdapter implements Consumer<FluxSink<String>> {
     private static final Logger logger = LoggerFactory.getLogger(TrackReaderServer.class);
 

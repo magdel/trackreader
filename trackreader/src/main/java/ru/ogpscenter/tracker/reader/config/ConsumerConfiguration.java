@@ -19,7 +19,7 @@ public class ConsumerConfiguration {
                 httpConsumer);
     }
 
-    @Bean()
+    @Bean(initMethod = "init", destroyMethod = "shutdown")
     public HttpConsumer httpConsumer() throws IOException {
         return new HttpConsumer();
     }
