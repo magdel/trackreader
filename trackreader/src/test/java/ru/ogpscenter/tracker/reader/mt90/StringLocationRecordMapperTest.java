@@ -80,13 +80,13 @@ public class StringLocationRecordMapperTest {
     public void shouldValidLocationTK102() throws Exception {
         StringLocationRecordMapper mapper = new StringLocationRecordMapper(() -> 1L);
         Optional<LocationRecord> recordOptional = mapper.apply("090723164830,+13616959853,GPRMC," +
-                "214830.000,A,3017.2558,N,09749.4888,W,26.9,108.8,230709,10,200,A*61,F, Help me,imei: 359587013388627," +
+                "114830.000,A,3017.2558,N,09749.4888,W,26.9,108.8,230709,10,200,A*61,F, Help me,imei: 359587013388627," +
                 "05,264.5,F:3.79V,0,122,13990,310,01,0AB0,345A");
         assertTrue(recordOptional.isPresent());
         LocationRecord record = recordOptional.get();
         assertEquals(record.getEventId(), new Long(1));
         assertEquals(record.getDeviceId(), "090723164830");
-        assertEquals(record.getDttm().getDayOfMonth(), 24);
+        assertEquals(record.getDttm().getDayOfMonth(), 23);
         assertEquals(record.getDttm().getYear(), 2009);
         assertEquals(record.getDttm().getMonthOfYear(), 7);
         assertEquals(record.getDttm().getMinuteOfHour(), 48);
@@ -104,7 +104,7 @@ public class StringLocationRecordMapperTest {
     public void shouldValidDttmTK102() throws Exception {
         StringLocationRecordMapper mapper = new StringLocationRecordMapper(() -> 1L);
         Optional<LocationRecord> recordOptional = mapper.apply("090723164830,+13616959853,GPRMC," +
-                "214830.000,A,,N,,W,26.9,108.8,230709,,,A*61,F, Help me,imei: 359587013388627," +
+                "114830.000,A,,N,,W,26.9,108.8,230709,,,A*61,F, Help me,imei: 359587013388627," +
                 "05,264.5,F:3.79V,0,122,13990,310,01,0AB0,345A");
         assertTrue(recordOptional.isPresent());
         LocationRecord record = recordOptional.get();
@@ -112,7 +112,7 @@ public class StringLocationRecordMapperTest {
         assertFalse(record.isValidSpdCrs());
         assertEquals(record.getDeviceId(), "090723164830");
         assertEquals(record.getImei(), "359587013388627");
-        assertEquals(record.getDttm().getDayOfMonth(), 24);
+        assertEquals(record.getDttm().getDayOfMonth(), 23);
         assertEquals(record.getDttm().getYear(), 2009);
         assertEquals(record.getDttm().getMonthOfYear(), 7);
         assertEquals(record.getDttm().getMinuteOfHour(), 48);
