@@ -16,10 +16,11 @@ Now accepts data from MT90 GPSTracker.
 
 ## Configuration
 
-Setup properties in usual Spring Boot way:
+Setup properties in usual Spring Boot via application.properties or environment:
 
 		#Your REST API
 		notify.http.notifyUri=http://someyourserver.com/api/trackreaderwhatever/location
+		notify.http.maxConnections=10
 		#TCP port to listen
 		server.tcp.port=7777
 

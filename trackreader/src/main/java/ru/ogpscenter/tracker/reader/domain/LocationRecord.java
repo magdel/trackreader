@@ -14,8 +14,8 @@ public class LocationRecord {
     private final double lon;
     private final double spd;
     private final int crs;
-    private boolean validLocation;
-    private boolean validSpdCrs;
+    private final boolean validLocation;
+    private final boolean validSpdCrs;
 
     public LocationRecord(Long eventId, String deviceId, String imei, DateTime dttm,
                           double lat, double lon, double spd, int crs,

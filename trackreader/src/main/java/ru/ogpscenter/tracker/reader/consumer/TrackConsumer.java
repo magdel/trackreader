@@ -15,7 +15,7 @@ import java.util.function.Consumer;
 public class TrackConsumer {
     private final Consumer<FluxSink<String>> trackerStringHandler;
     private final Consumer<Optional<LocationRecord>> httpConsumer;
-    private StringLocationRecordMapper mapper;
+    private final StringLocationRecordMapper mapper;
     private Cancellation cancellation;
 
     public TrackConsumer(Consumer<FluxSink<String>> trackerStringHandler,

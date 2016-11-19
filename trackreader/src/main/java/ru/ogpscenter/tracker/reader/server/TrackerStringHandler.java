@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import reactor.core.publisher.FluxSink;
 
+import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Consumer;
 
 /**
@@ -17,14 +18,15 @@ import java.util.function.Consumer;
 public class TrackerStringHandler extends ChannelHandlerAdapter implements Consumer<FluxSink<String>> {
     private static final Logger logger = LoggerFactory.getLogger(TrackReaderServer.class);
 
+    private final AtomicLong readCounter = new AtomicLong();
     private FluxSink<String> stringFluxSink;
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) {
         String trackerMessage = (String) msg;
-        //System.out.print(trackerMessage);
         if (stringFluxSink != null) {
-            logger.info("Got: msg={}", trackerMessage);
+            long count = readCounter.incrementAndGet();
+            logger.info("Read: count={}, msg={}", count, trackerMessage);
             stringFluxSink.next(trackerMessage);
         }
     }
@@ -53,5 +55,9 @@ public class TrackerStringHandler extends ChannelHandlerAdapter implements Consu
             throw new IllegalArgumentException("Already set");
         }
         this.stringFluxSink = stringFluxSink;
+    }
+
+    public long getReadCount() {
+        return readCounter.get();
     }
 }

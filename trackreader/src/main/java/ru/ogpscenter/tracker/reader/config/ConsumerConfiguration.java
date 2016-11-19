@@ -3,7 +3,7 @@ package ru.ogpscenter.tracker.reader.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import reactor.core.publisher.FluxSink;
-import ru.ogpscenter.tracker.reader.config.properties.NotificationDestination;
+import ru.ogpscenter.tracker.reader.config.properties.NotificationProperties;
 import ru.ogpscenter.tracker.reader.consumer.HttpConsumer;
 import ru.ogpscenter.tracker.reader.consumer.TrackConsumer;
 import ru.ogpscenter.tracker.reader.generator.SimpleFlakeIdGenerator;
@@ -28,8 +28,9 @@ public class ConsumerConfiguration {
     }
 
     @Bean(initMethod = "init", destroyMethod = "shutdown")
-    public HttpConsumer httpConsumer(NotificationDestination notificationDestination) throws IOException {
-        return new HttpConsumer(URI.create(notificationDestination.getNotifyUri()));
+    public HttpConsumer httpConsumer(NotificationProperties notificationProperties) throws IOException {
+        return new HttpConsumer(URI.create(notificationProperties.getNotifyUri()),
+                notificationProperties.getMaxConnections());
     }
 
     @Bean

@@ -2,6 +2,8 @@ package ru.ogpscenter.tracker.reader.mt90;
 
 import org.joda.time.DateTime;
 import org.joda.time.format.ISODateTimeFormat;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import ru.ogpscenter.tracker.reader.domain.LocationRecord;
 import ru.ogpscenter.tracker.reader.generator.IdGenerator;
 
@@ -12,8 +14,8 @@ import java.util.function.Function;
  * Created by rfk on 18.11.2016.
  */
 public class StringLocationRecordMapper implements Function<String, Optional<LocationRecord>> {
-
-    private IdGenerator idGenerator;
+    private static final Logger logger = LoggerFactory.getLogger(StringLocationRecordMapper.class);
+    private final IdGenerator idGenerator;
 
     public StringLocationRecordMapper(IdGenerator idGenerator) {
         this.idGenerator = idGenerator;
@@ -21,6 +23,15 @@ public class StringLocationRecordMapper implements Function<String, Optional<Loc
 
     @Override
     public Optional<LocationRecord> apply(String trackString) {
+        try {
+            return convert(trackString, idGenerator);
+        } catch (Exception ex) {
+            logger.error("Convert failed: dataString={}", trackString, ex);
+            return Optional.empty();
+        }
+    }
+
+    static Optional<LocationRecord> convert(String trackString, IdGenerator idGenerator) {
         //STX,Id-112233,$GPRMC,112842.000,A,6000.5274,N,03021.3429,E,0.00,0.00,241214,,,A*6C,F,,imei:013226008424265,03,23.0,Battery=70%,,0,250,02,1E82,173D;36
 
         String[] split = trackString.split(",");

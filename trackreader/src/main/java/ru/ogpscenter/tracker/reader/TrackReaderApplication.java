@@ -14,11 +14,5 @@ public class TrackReaderApplication {
         System.out.println("Starting..");
         SpringApplication.run(TrackReaderApplication.class, args);
         System.out.println("Started");
-        try {
-            Thread.currentThread().join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        logger.info("Exiting..");
     }
 }

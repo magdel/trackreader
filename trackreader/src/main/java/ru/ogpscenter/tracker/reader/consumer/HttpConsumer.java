@@ -41,7 +41,7 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
     private final AtomicLong acceptedCounter = new AtomicLong();
     private final AtomicLong sentCounter = new AtomicLong();
 
-    public HttpConsumer(URI notifyUri) throws IOReactorException {
+    public HttpConsumer(URI notifyUri, int maxConnections) throws IOReactorException {
         this.notifyUri = notifyUri;
         IOReactorConfig ioReactorConfig = IOReactorConfig.custom()
                 .setIoThreadCount(1)
@@ -49,8 +49,8 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
         ConnectingIOReactor ioReactor = new DefaultConnectingIOReactor(ioReactorConfig);
 
         this.connectionManager = new PoolingNHttpClientConnectionManager(ioReactor);
-        this.connectionManager.setMaxTotal(20);
-        this.connectionManager.setDefaultMaxPerRoute(10);
+        this.connectionManager.setMaxTotal(maxConnections);
+        this.connectionManager.setDefaultMaxPerRoute(maxConnections);
         this.client = HttpAsyncClients.custom()
                 .setDefaultRequestConfig(RequestConfig.custom()
                         .setConnectTimeout(5000)
@@ -59,11 +59,24 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
                         .build()
                 )
                 .setConnectionManager(connectionManager).build();
-        logger.info("Sending: uri={}", notifyUri);
+        logger.info("Sending: uri={}, maxConnections={}", notifyUri, maxConnections);
     }
 
     public void init() {
         client.start();
+    }
+
+    void shutdown() {
+        try {
+            client.close();
+        } catch (IOException e) {
+            logger.error("On close", e);
+        }
+        try {
+            connectionManager.shutdown();
+        } catch (IOException e) {
+            logger.error("On shutdown", e);
+        }
     }
 
     @Override
@@ -104,21 +117,12 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
         });
     }
 
-    void shutdown() {
-        try {
-            client.close();
-        } catch (IOException e) {
-            logger.error("On close", e);
-        }
-        try {
-            connectionManager.shutdown();
-        } catch (IOException e) {
-            logger.error("On shutdown", e);
-        }
-    }
-
     public long getAcceptCount() {
         return acceptedCounter.get();
+    }
+
+    public long getSentCount() {
+        return sentCounter.get();
     }
 
 

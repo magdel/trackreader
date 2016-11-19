@@ -7,11 +7,14 @@ import javax.validation.constraints.NotNull;
 
 @Configuration
 @ConfigurationProperties("notify.http")
-public class NotificationDestination {
+public class NotificationProperties {
 
 
     @NotNull
     private String notifyUri;
+
+    @NotNull
+    private Integer maxConnections;
 
     public String getNotifyUri() {
         return notifyUri;
@@ -19,5 +22,13 @@ public class NotificationDestination {
 
     public void setNotifyUri(String notifyUri) {
         this.notifyUri = notifyUri;
+    }
+
+    public Integer getMaxConnections() {
+        return maxConnections;
+    }
+
+    public void setMaxConnections(Integer maxConnections) {
+        this.maxConnections = maxConnections;
     }
 }
