@@ -1,10 +1,15 @@
 package ru.ogpscenter.tracker.reader.domain;
 
+import lombok.ToString;
 import org.joda.time.DateTime;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 
 /**
  * Created by rfk on 17.11.2016.
  */
+@ToString
 public class LocationRecord {
     private final Long eventId;
     private final String deviceId;
@@ -16,10 +21,12 @@ public class LocationRecord {
     private final int crs;
     private final boolean validLocation;
     private final boolean validSpdCrs;
+    private final TrackerType trackerType;
 
     public LocationRecord(Long eventId, String deviceId, String imei, DateTime dttm,
                           double lat, double lon, double spd, int crs,
-                          boolean validLocation, boolean validSpdCrs) {
+                          boolean validLocation, boolean validSpdCrs,
+                          TrackerType trackerType) {
         this.eventId = eventId;
         this.deviceId = deviceId;
         this.imei = imei;
@@ -30,20 +37,25 @@ public class LocationRecord {
         this.crs = crs;
         this.validLocation = validLocation;
         this.validSpdCrs = validSpdCrs;
+        this.trackerType = trackerType;
     }
 
+    @Nonnull
     public Long getEventId() {
         return eventId;
     }
 
+    @Nonnull
     public String getDeviceId() {
         return deviceId;
     }
 
+    @Nullable
     public String getImei() {
         return imei;
     }
 
+    @Nonnull
     public DateTime getDttm() {
         return dttm;
     }
@@ -64,29 +76,17 @@ public class LocationRecord {
         return crs;
     }
 
-
     public boolean isValidLocation() {
         return validLocation;
     }
-
 
     public boolean isValidSpdCrs() {
         return validSpdCrs;
     }
 
-    @Override
-    public String toString() {
-        return "LocationRecord{" +
-                "eventId=" + eventId +
-                ", deviceId='" + deviceId + '\'' +
-                ", imei='" + imei + '\'' +
-                ", dttm=" + dttm +
-                ", lat=" + lat +
-                ", lon=" + lon +
-                ", spd=" + spd +
-                ", crs=" + crs +
-                ", validLocation=" + validLocation +
-                ", validSpdCrs=" + validSpdCrs +
-                '}';
+    @Nonnull
+    public TrackerType getTrackerType() {
+        return trackerType;
     }
+
 }

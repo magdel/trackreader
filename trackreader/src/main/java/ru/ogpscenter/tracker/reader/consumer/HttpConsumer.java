@@ -82,17 +82,13 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
     @Override
     public void accept(Optional<LocationRecord> optinalLocationRecord) {
         if (!optinalLocationRecord.isPresent()) {
-            logger.info("Empty");
+            logger.info("Empty record");
             return;
         }
         long acceptNumber = acceptedCounter.incrementAndGet();
         LocationRecord locationRecord = optinalLocationRecord.get();
         logger.info("Request to send: eventId={}, accepted={}", locationRecord.getEventId(), acceptNumber);
-        HttpPost httpget = new HttpPost(notifyUri);
-        httpget.setProtocolVersion(HttpVersion.HTTP_1_1);
-        ArrayList<NameValuePair> parameters = createParametersArray(locationRecord);
-        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(parameters, StandardCharsets.UTF_8);
-        httpget.setEntity(entity);
+        HttpPost httpget = createHttpPost(locationRecord);
         long started = System.currentTimeMillis();
         client.execute(httpget, new FutureCallback<HttpResponse>() {
             @Override
@@ -117,6 +113,15 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
         });
     }
 
+    private HttpPost createHttpPost(LocationRecord locationRecord) {
+        HttpPost httpget = new HttpPost(notifyUri);
+        httpget.setProtocolVersion(HttpVersion.HTTP_1_1);
+        ArrayList<NameValuePair> parameters = createParametersArray(locationRecord);
+        UrlEncodedFormEntity entity = new UrlEncodedFormEntity(parameters, StandardCharsets.UTF_8);
+        httpget.setEntity(entity);
+        return httpget;
+    }
+
     public long getAcceptCount() {
         return acceptedCounter.get();
     }
@@ -131,6 +136,9 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
         parameters.add(new BasicNameValuePair("eventId", locationRecord.getEventId().toString()));
         parameters.add(new BasicNameValuePair("deviceId", locationRecord.getDeviceId()));
         parameters.add(new BasicNameValuePair("dttm", Long.toString(locationRecord.getDttm().getMillis())));
+        parameters.add(new BasicNameValuePair("trackerType", locationRecord.getTrackerType().name()));
+
+        //optional parameters
         if (locationRecord.getImei() != null) {
             parameters.add(new BasicNameValuePair("imei", locationRecord.getImei()));
         }

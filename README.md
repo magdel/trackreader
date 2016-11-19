@@ -4,7 +4,7 @@
 
 Reactive server to read GPS Trackers TCP streams and send data over HTTP further.
 
-Now accepts data from MT90 GPSTracker.
+Now accepts data from MT90 GPSTracker and TK102-2.
 
 ## Request format
 
