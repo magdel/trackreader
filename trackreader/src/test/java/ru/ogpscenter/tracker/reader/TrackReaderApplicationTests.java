@@ -41,6 +41,19 @@ public class TrackReaderApplicationTests extends AbstractTestNGSpringContextTest
     }
 
     @Test(dependsOnMethods = "testProcessMt90Message")
+    public void testIgnoreTrashMessage() throws Exception {
+        Assert.assertEquals(httpConsumer.getAcceptCount(), 1);
+        Socket socket = new Socket("localhost", Integer.parseInt(environment.getProperty("server.tcp.port")));
+        OutputStream outputStream = socket.getOutputStream();
+        outputStream.write(("STX,,,,,,\n").getBytes());
+        outputStream.flush();
+        outputStream.close();
+        socket.close();
+        Thread.sleep(1000);
+        Assert.assertEquals(httpConsumer.getAcceptCount(), 1);
+    }
+
+    @Test(dependsOnMethods = "testIgnoreTrashMessage")
     public void testProcessTk102Message() throws Exception {
         Assert.assertEquals(httpConsumer.getAcceptCount(), 1);
         Socket socket = new Socket("localhost", Integer.parseInt(environment.getProperty("server.tcp.port")));

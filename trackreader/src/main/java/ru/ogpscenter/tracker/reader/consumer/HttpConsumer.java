@@ -25,14 +25,13 @@ import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.util.ArrayList;
-import java.util.Optional;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.function.Consumer;
 
 /**
  * Created by rfk on 15.11.2016.
  */
-public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
+public class HttpConsumer implements Consumer<LocationRecord> {
     private static final Logger logger = LoggerFactory.getLogger(HttpConsumer.class);
 
     private final PoolingNHttpClientConnectionManager connectionManager;
@@ -80,13 +79,8 @@ public class HttpConsumer implements Consumer<Optional<LocationRecord>> {
     }
 
     @Override
-    public void accept(Optional<LocationRecord> optinalLocationRecord) {
-        if (!optinalLocationRecord.isPresent()) {
-            logger.info("Empty record");
-            return;
-        }
+    public void accept(LocationRecord locationRecord) {
         long acceptNumber = acceptedCounter.incrementAndGet();
-        LocationRecord locationRecord = optinalLocationRecord.get();
         logger.info("Request to send: eventId={}, accepted={}", locationRecord.getEventId(), acceptNumber);
         HttpPost httpget = createHttpPost(locationRecord);
         long started = System.currentTimeMillis();

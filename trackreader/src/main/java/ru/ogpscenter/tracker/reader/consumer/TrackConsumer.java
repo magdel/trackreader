@@ -14,12 +14,12 @@ import java.util.function.Consumer;
  */
 public class TrackConsumer {
     private final Consumer<FluxSink<String>> trackerStringHandler;
-    private final Consumer<Optional<LocationRecord>> httpConsumer;
+    private final Consumer<LocationRecord> httpConsumer;
     private final StringLocationRecordMapper mapper;
     private Cancellation cancellation;
 
     public TrackConsumer(Consumer<FluxSink<String>> trackerStringHandler,
-                         Consumer<Optional<LocationRecord>> httpConsumer,
+                         Consumer<LocationRecord> httpConsumer,
                          StringLocationRecordMapper mapper) {
         this.trackerStringHandler = trackerStringHandler;
         this.httpConsumer = httpConsumer;
@@ -30,6 +30,8 @@ public class TrackConsumer {
         cancellation = Flux.create(trackerStringHandler, FluxSink.OverflowStrategy.LATEST)
                 .onBackpressureBuffer(4)
                 .map(mapper)
+                .filter(Optional::isPresent)
+                .map(Optional::get)
                 .subscribe(httpConsumer);
     }
 
