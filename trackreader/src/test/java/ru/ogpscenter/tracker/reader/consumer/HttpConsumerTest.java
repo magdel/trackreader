@@ -28,4 +28,12 @@ public class HttpConsumerTest {
         assertEquals(array.toString(), "[eventId=1, deviceId=2, dttm=1277860800000, trackerType=tk102, imei=ime]");
     }
 
+    //dev integration test
+   /* @Test(threadPoolSize = 8, invocationCount = 10)
+    public void sendTCP() throws IOException, InterruptedException {
+        String s = "STX,Id-112233,$GPRMC,112842.000,A,6030.0000,N,03021.3429,W,0.00,0.00,241214,,,A*6C,F,,imei:013226008424265,03,23.0,Battery=70%,,0,250,02,1E82,173D;36\n";
+
+        TrackReaderApplicationTests.sendLocalhostTCPString(s, 10000);
+    }*/
+
 }

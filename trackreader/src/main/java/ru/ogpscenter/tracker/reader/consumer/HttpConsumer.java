@@ -97,7 +97,7 @@ public class HttpConsumer implements Consumer<LocationRecord> {
 
             @Override
             public void failed(Exception e) {
-                logger.error("Request failed: eventId={}, msg={}", locationRecord.getEventId(), e.getMessage());
+                logger.error("Request failed: eventId={}, error={}", locationRecord.getEventId(), e.getMessage());
             }
 
             @Override
