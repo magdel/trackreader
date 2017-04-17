@@ -2,6 +2,7 @@
 
 [![Travis CI](https://travis-ci.org/magdel/trackreader.svg?branch=master)](https://travis-ci.org/magdel/trackreader)
 [![Coverage Status](https://coveralls.io/repos/github/magdel/trackreader/badge.svg?branch=master)](https://coveralls.io/github/magdel/trackreader?branch=master)
+[![Code Climate](https://codeclimate.com/github/magdel/trackreader/badges/gpa.svg)](https://codeclimate.com/github/magdel/trackreader)
 
 Server to read GPS Trackers TCP streams and send data over HTTP further. Now accepts data from MT90 GPSTracker and TK102-2.
 
