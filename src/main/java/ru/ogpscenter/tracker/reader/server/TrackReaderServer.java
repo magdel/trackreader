@@ -76,7 +76,7 @@ public class TrackReaderServer {
         logger.info("Shutdowned TCP server: port={}", port);
     }
 
-    public class TrackerStringDecoder extends ByteToMessageDecoder { // (1)
+    private static class TrackerStringDecoder extends ByteToMessageDecoder { // (1)
         @Override
         protected void decode(ChannelHandlerContext ctx, ByteBuf in, List<Object> out) { // (2)
             int bytesBefore = in.bytesBefore((byte) '\n');
